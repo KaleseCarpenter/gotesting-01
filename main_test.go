@@ -8,6 +8,16 @@ func TestCalculate(t *testing.T) {
 	}
 }
 
+// refactored the above test. This reads better
+func TestCalculation(t *testing.T) {
+	got := Calculate(2)
+	want := 4
+
+	if got != want {
+		t.Errorf("got %d want %d", got, want)
+	}
+}
+
 func TestTableCalculate(t *testing.T) {
 	// an array of type struct
 	var tests = []struct {
@@ -32,4 +42,14 @@ func TestMultiply(t *testing.T) {
 		t.Error("Expected 3 * 3 to equal 9")
 	}
 
+}
+
+// This test reads better
+func TestMultiplication(t *testing.T) {
+	got := Multiply(3)
+	want := 9
+
+	if got != want {
+		t.Errorf("got %d want %d", got, want)
+	}
 }
