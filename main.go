@@ -11,7 +11,7 @@ func Calculate(x int) (result int) {
 }
 
 func main() {
-	fmt.Println("Go Testing Tutorial")
+	fmt.Println("Writing a Golang Test.", "Yeee!")
 	result := Calculate(2)
 	fmt.Println(result)
 }
