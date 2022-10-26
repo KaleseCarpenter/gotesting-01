@@ -26,3 +26,10 @@ func TestTableCalculate(t *testing.T) {
 		}
 	}
 }
+
+func TestMultiply(t *testing.T) {
+	if Multiply(3) != 9 {
+		t.Error("Expected 3 * 3 to equal 9")
+	}
+
+}

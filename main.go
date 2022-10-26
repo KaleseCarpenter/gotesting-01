@@ -12,6 +12,13 @@ func Calculate(x int) (result int) {
 
 func main() {
 	fmt.Println("Writing a Golang Test.", "Yeee!")
-	result := Calculate(2)
+	//result := Calculate(2)
+	//fmt.Println(result)
+	result := Multiply(3)
 	fmt.Println(result)
+}
+
+func Multiply(k int) (result int) {
+	result = k * 3
+	return result
 }
